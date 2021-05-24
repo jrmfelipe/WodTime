@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B4F3940265B5F3900FD3C6B /* WodTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F393F265B5F3900FD3C6B /* WodTimeApp.swift */; };
+		5B4F3942265B5F3900FD3C6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F3941265B5F3900FD3C6B /* ContentView.swift */; };
+		5B4F3944265B5F3A00FD3C6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4F3943265B5F3A00FD3C6B /* Assets.xcassets */; };
+		5B4F3947265B5F3A00FD3C6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4F3946265B5F3A00FD3C6B /* Preview Assets.xcassets */; };
+		5B4F3949265B5F3A00FD3C6B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F3948265B5F3A00FD3C6B /* Persistence.swift */; };
+		5B4F394C265B5F3A00FD3C6B /* WodTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F394A265B5F3A00FD3C6B /* WodTime.xcdatamodeld */; };
+		5B4F3957265B5F3A00FD3C6B /* WodTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F3956265B5F3A00FD3C6B /* WodTimeTests.swift */; };
+		5B4F3962265B5F3A00FD3C6B /* WodTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F3961265B5F3A00FD3C6B /* WodTimeUITests.swift */; };
+		5B4F3970265B601300FD3C6B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F396F265B601300FD3C6B /* HomeView.swift */; };
+		5B4F3973265B60AB00FD3C6B /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F3972265B60AB00FD3C6B /* AppStrings.swift */; };
+		5B4F3975265B60CF00FD3C6B /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F3974265B60CF00FD3C6B /* AppConstants.swift */; };
+		5B4F3979265B8F5600FD3C6B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F3978265B8F5600FD3C6B /* OnboardingView.swift */; };
+		5B4F397B265B8FAC00FD3C6B /* OnboardScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F397A265B8FAC00FD3C6B /* OnboardScreenView.swift */; };
+		5B4F397D265BA89A00FD3C6B /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F397C265BA89A00FD3C6B /* MainContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B4F3953265B5F3A00FD3C6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B4F3934265B5F3900FD3C6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B4F393B265B5F3900FD3C6B;
+			remoteInfo = WodTime;
+		};
+		5B4F395E265B5F3A00FD3C6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B4F3934265B5F3900FD3C6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B4F393B265B5F3900FD3C6B;
+			remoteInfo = WodTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B4F393C265B5F3900FD3C6B /* WodTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WodTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B4F393F265B5F3900FD3C6B /* WodTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodTimeApp.swift; sourceTree = "<group>"; };
+		5B4F3941265B5F3900FD3C6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5B4F3943265B5F3A00FD3C6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B4F3946265B5F3A00FD3C6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5B4F3948265B5F3A00FD3C6B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5B4F394B265B5F3A00FD3C6B /* WodTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WodTime.xcdatamodel; sourceTree = "<group>"; };
+		5B4F394D265B5F3A00FD3C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B4F3952265B5F3A00FD3C6B /* WodTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WodTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B4F3956265B5F3A00FD3C6B /* WodTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodTimeTests.swift; sourceTree = "<group>"; };
+		5B4F3958265B5F3A00FD3C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B4F395D265B5F3A00FD3C6B /* WodTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WodTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B4F3961265B5F3A00FD3C6B /* WodTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodTimeUITests.swift; sourceTree = "<group>"; };
+		5B4F3963265B5F3A00FD3C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B4F396F265B601300FD3C6B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5B4F3972265B60AB00FD3C6B /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		5B4F3974265B60CF00FD3C6B /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		5B4F3978265B8F5600FD3C6B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		5B4F397A265B8FAC00FD3C6B /* OnboardScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardScreenView.swift; sourceTree = "<group>"; };
+		5B4F397C265BA89A00FD3C6B /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B4F3939265B5F3900FD3C6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4F394F265B5F3A00FD3C6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4F395A265B5F3A00FD3C6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B4F3933265B5F3900FD3C6B = {
+			isa = PBXGroup;
+			children = (
+				5B4F393E265B5F3900FD3C6B /* WodTime */,
+				5B4F3955265B5F3A00FD3C6B /* WodTimeTests */,
+				5B4F3960265B5F3A00FD3C6B /* WodTimeUITests */,
+				5B4F393D265B5F3900FD3C6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B4F393D265B5F3900FD3C6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B4F393C265B5F3900FD3C6B /* WodTime.app */,
+				5B4F3952265B5F3A00FD3C6B /* WodTimeTests.xctest */,
+				5B4F395D265B5F3A00FD3C6B /* WodTimeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B4F393E265B5F3900FD3C6B /* WodTime */ = {
+			isa = PBXGroup;
+			children = (
+				5B4F3971265B607A00FD3C6B /* Supporting Files */,
+				5B4F3976265B8D9300FD3C6B /* Supporting Views */,
+				5B4F393F265B5F3900FD3C6B /* WodTimeApp.swift */,
+				5B4F3941265B5F3900FD3C6B /* ContentView.swift */,
+				5B4F396F265B601300FD3C6B /* HomeView.swift */,
+				5B4F397C265BA89A00FD3C6B /* MainContentView.swift */,
+				5B4F3943265B5F3A00FD3C6B /* Assets.xcassets */,
+				5B4F3948265B5F3A00FD3C6B /* Persistence.swift */,
+				5B4F394D265B5F3A00FD3C6B /* Info.plist */,
+				5B4F394A265B5F3A00FD3C6B /* WodTime.xcdatamodeld */,
+				5B4F3945265B5F3A00FD3C6B /* Preview Content */,
+			);
+			path = WodTime;
+			sourceTree = "<group>";
+		};
+		5B4F3945265B5F3A00FD3C6B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5B4F3946265B5F3A00FD3C6B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5B4F3955265B5F3A00FD3C6B /* WodTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B4F3956265B5F3A00FD3C6B /* WodTimeTests.swift */,
+				5B4F3958265B5F3A00FD3C6B /* Info.plist */,
+			);
+			path = WodTimeTests;
+			sourceTree = "<group>";
+		};
+		5B4F3960265B5F3A00FD3C6B /* WodTimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B4F3961265B5F3A00FD3C6B /* WodTimeUITests.swift */,
+				5B4F3963265B5F3A00FD3C6B /* Info.plist */,
+			);
+			path = WodTimeUITests;
+			sourceTree = "<group>";
+		};
+		5B4F3971265B607A00FD3C6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B4F3972265B60AB00FD3C6B /* AppStrings.swift */,
+				5B4F3974265B60CF00FD3C6B /* AppConstants.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B4F3976265B8D9300FD3C6B /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B4F3977265B8DA300FD3C6B /* Onboarding */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		5B4F3977265B8DA300FD3C6B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5B4F3978265B8F5600FD3C6B /* OnboardingView.swift */,
+				5B4F397A265B8FAC00FD3C6B /* OnboardScreenView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B4F393B265B5F3900FD3C6B /* WodTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B4F3966265B5F3A00FD3C6B /* Build configuration list for PBXNativeTarget "WodTime" */;
+			buildPhases = (
+				5B4F3938265B5F3900FD3C6B /* Sources */,
+				5B4F3939265B5F3900FD3C6B /* Frameworks */,
+				5B4F393A265B5F3900FD3C6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WodTime;
+			productName = WodTime;
+			productReference = 5B4F393C265B5F3900FD3C6B /* WodTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B4F3951265B5F3A00FD3C6B /* WodTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B4F3969265B5F3A00FD3C6B /* Build configuration list for PBXNativeTarget "WodTimeTests" */;
+			buildPhases = (
+				5B4F394E265B5F3A00FD3C6B /* Sources */,
+				5B4F394F265B5F3A00FD3C6B /* Frameworks */,
+				5B4F3950265B5F3A00FD3C6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B4F3954265B5F3A00FD3C6B /* PBXTargetDependency */,
+			);
+			name = WodTimeTests;
+			productName = WodTimeTests;
+			productReference = 5B4F3952265B5F3A00FD3C6B /* WodTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B4F395C265B5F3A00FD3C6B /* WodTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B4F396C265B5F3A00FD3C6B /* Build configuration list for PBXNativeTarget "WodTimeUITests" */;
+			buildPhases = (
+				5B4F3959265B5F3A00FD3C6B /* Sources */,
+				5B4F395A265B5F3A00FD3C6B /* Frameworks */,
+				5B4F395B265B5F3A00FD3C6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B4F395F265B5F3A00FD3C6B /* PBXTargetDependency */,
+			);
+			name = WodTimeUITests;
+			productName = WodTimeUITests;
+			productReference = 5B4F395D265B5F3A00FD3C6B /* WodTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B4F3934265B5F3900FD3C6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					5B4F393B265B5F3900FD3C6B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					5B4F3951265B5F3A00FD3C6B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 5B4F393B265B5F3900FD3C6B;
+					};
+					5B4F395C265B5F3A00FD3C6B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 5B4F393B265B5F3900FD3C6B;
+					};
+				};
+			};
+			buildConfigurationList = 5B4F3937265B5F3900FD3C6B /* Build configuration list for PBXProject "WodTime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B4F3933265B5F3900FD3C6B;
+			productRefGroup = 5B4F393D265B5F3900FD3C6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B4F393B265B5F3900FD3C6B /* WodTime */,
+				5B4F3951265B5F3A00FD3C6B /* WodTimeTests */,
+				5B4F395C265B5F3A00FD3C6B /* WodTimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B4F393A265B5F3900FD3C6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4F3947265B5F3A00FD3C6B /* Preview Assets.xcassets in Resources */,
+				5B4F3944265B5F3A00FD3C6B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4F3950265B5F3A00FD3C6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4F395B265B5F3A00FD3C6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B4F3938265B5F3900FD3C6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4F3949265B5F3A00FD3C6B /* Persistence.swift in Sources */,
+				5B4F397B265B8FAC00FD3C6B /* OnboardScreenView.swift in Sources */,
+				5B4F394C265B5F3A00FD3C6B /* WodTime.xcdatamodeld in Sources */,
+				5B4F3942265B5F3900FD3C6B /* ContentView.swift in Sources */,
+				5B4F3970265B601300FD3C6B /* HomeView.swift in Sources */,
+				5B4F3975265B60CF00FD3C6B /* AppConstants.swift in Sources */,
+				5B4F3979265B8F5600FD3C6B /* OnboardingView.swift in Sources */,
+				5B4F3973265B60AB00FD3C6B /* AppStrings.swift in Sources */,
+				5B4F3940265B5F3900FD3C6B /* WodTimeApp.swift in Sources */,
+				5B4F397D265BA89A00FD3C6B /* MainContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4F394E265B5F3A00FD3C6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4F3957265B5F3A00FD3C6B /* WodTimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4F3959265B5F3A00FD3C6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4F3962265B5F3A00FD3C6B /* WodTimeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B4F3954265B5F3A00FD3C6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B4F393B265B5F3900FD3C6B /* WodTime */;
+			targetProxy = 5B4F3953265B5F3A00FD3C6B /* PBXContainerItemProxy */;
+		};
+		5B4F395F265B5F3A00FD3C6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B4F393B265B5F3900FD3C6B /* WodTime */;
+			targetProxy = 5B4F395E265B5F3A00FD3C6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5B4F3964265B5F3A00FD3C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B4F3965265B5F3A00FD3C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B4F3967265B5F3A00FD3C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WodTime/Preview Content\"";
+				DEVELOPMENT_TEAM = JF8XNH8Y89;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WodTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rfapps.WodTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B4F3968265B5F3A00FD3C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WodTime/Preview Content\"";
+				DEVELOPMENT_TEAM = JF8XNH8Y89;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WodTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rfapps.WodTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B4F396A265B5F3A00FD3C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF8XNH8Y89;
+				INFOPLIST_FILE = WodTimeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rfapps.WodTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WodTime.app/WodTime";
+			};
+			name = Debug;
+		};
+		5B4F396B265B5F3A00FD3C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF8XNH8Y89;
+				INFOPLIST_FILE = WodTimeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rfapps.WodTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WodTime.app/WodTime";
+			};
+			name = Release;
+		};
+		5B4F396D265B5F3A00FD3C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF8XNH8Y89;
+				INFOPLIST_FILE = WodTimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rfapps.WodTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WodTime;
+			};
+			name = Debug;
+		};
+		5B4F396E265B5F3A00FD3C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF8XNH8Y89;
+				INFOPLIST_FILE = WodTimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rfapps.WodTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WodTime;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B4F3937265B5F3900FD3C6B /* Build configuration list for PBXProject "WodTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B4F3964265B5F3A00FD3C6B /* Debug */,
+				5B4F3965265B5F3A00FD3C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B4F3966265B5F3A00FD3C6B /* Build configuration list for PBXNativeTarget "WodTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B4F3967265B5F3A00FD3C6B /* Debug */,
+				5B4F3968265B5F3A00FD3C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B4F3969265B5F3A00FD3C6B /* Build configuration list for PBXNativeTarget "WodTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B4F396A265B5F3A00FD3C6B /* Debug */,
+				5B4F396B265B5F3A00FD3C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B4F396C265B5F3A00FD3C6B /* Build configuration list for PBXNativeTarget "WodTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B4F396D265B5F3A00FD3C6B /* Debug */,
+				5B4F396E265B5F3A00FD3C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5B4F394A265B5F3A00FD3C6B /* WodTime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5B4F394B265B5F3A00FD3C6B /* WodTime.xcdatamodel */,
+			);
+			currentVersion = 5B4F394B265B5F3A00FD3C6B /* WodTime.xcdatamodel */;
+			path = WodTime.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5B4F3934265B5F3900FD3C6B /* Project object */;
+}
