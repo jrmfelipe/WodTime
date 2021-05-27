@@ -9,23 +9,31 @@ import SwiftUI
 
 struct MainContentView: View {
     
-    let totalPages = AppConstants.Onboarding.Timer.totalPages
-    @AppStorage(AppConstants.Onboarding.Key.timer) var currentPage = 1
+    @AppStorage(AppConstants.Onboarding.Timer.wasPresented) var wasPresented = false
+    @State private var onboardingIsPresented = true
     
     var body: some View {
         
-        OnboardingScreenView(title: ["1", "2", "3"],
-                             detail: ["Detail here .", "Detail here ..", "Detail here ..."],
-                             image: ["timer", "clock", "clock.arrow.circlepath"])
+        VStack {
        
-//        if currentPage > totalPages {
-//
-//            HomeView()
-//
-//        } else {
-//
-//            OnboardingView()
-//        }
+            if (wasPresented || !onboardingIsPresented) {
+                
+                HomeView()
+                
+            } else {
+    
+                OnboardingScreenView(isPresented: $onboardingIsPresented,
+                                     title: ["1", "2", "3"],
+                                     detail: ["Detail here .", "Detail here ..", "Detail here ..."],
+                                     image: ["timer", "clock", "clock.arrow.circlepath"],
+                                     totalPages: 3)
+                    .onChange(of: onboardingIsPresented, perform: { newValue in
+                        wasPresented = true
+                    })
+                    .animation(.easeInOut(duration: 0.5))
+                    .transition(.slideRightToLeft)
+            }
+        }
     }
 }
 

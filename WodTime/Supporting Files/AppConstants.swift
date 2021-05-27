@@ -12,10 +12,8 @@ struct AppConstants {
     
     struct Onboarding {
         struct Timer {
-            static let totalPages = 3
-        }
-        struct Key {
-            static let timer = "Onboarding.Timer.currentPage"
+            static let wasPresented = "Onboarding.Timer.WasPresented"
+            static let curPage = "Onboarding.Timer.curPage"
         }
         struct UI {
             static let bgColor = Color.gray.opacity(0.5)

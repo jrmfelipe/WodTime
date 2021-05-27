@@ -9,8 +9,8 @@ import SwiftUI
 
 struct OnboardingView: View {
     
-    let totalPages = AppConstants.Onboarding.Timer.totalPages
-    @AppStorage(AppConstants.Onboarding.Key.timer) var currentPage = 1
+    let totalPages = 3
+    @AppStorage(AppConstants.Onboarding.Timer.curPage) var currentPage = 1
     
     var body: some View {
         // For Sliding Animation

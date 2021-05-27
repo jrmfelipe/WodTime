@@ -15,7 +15,7 @@ struct OnboardScreenView: View {
     var bgColor: Color
     var maxPage: NSInteger
     
-    @AppStorage(AppConstants.Onboarding.Key.timer) var currentPage = 1
+    @AppStorage(AppConstants.Onboarding.Timer.curPage) var currentPage = 0
     
     var body: some View {
         VStack(spacing: 20) {
