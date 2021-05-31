@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B4CE1EF2661C9670079C7EF /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B4CE1ED2661C9670079C7EF /* digital-7.ttf */; };
+		5B4CE1F02661C9670079C7EF /* impact.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B4CE1EE2661C9670079C7EF /* impact.otf */; };
+		5B4CE1F22661CA7E0079C7EF /* WTText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4CE1F12661CA7E0079C7EF /* WTText.swift */; };
+		5B4CE1F426629CC40079C7EF /* AboutScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4CE1F326629CC40079C7EF /* AboutScreenView.swift */; };
 		5B4F3940265B5F3900FD3C6B /* WodTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F393F265B5F3900FD3C6B /* WodTimeApp.swift */; };
 		5B4F3942265B5F3900FD3C6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F3941265B5F3900FD3C6B /* ContentView.swift */; };
 		5B4F3944265B5F3A00FD3C6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4F3943265B5F3A00FD3C6B /* Assets.xcassets */; };
@@ -46,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B4CE1ED2661C9670079C7EF /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		5B4CE1EE2661C9670079C7EF /* impact.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = impact.otf; sourceTree = "<group>"; };
+		5B4CE1F12661CA7E0079C7EF /* WTText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTText.swift; sourceTree = "<group>"; };
+		5B4CE1F326629CC40079C7EF /* AboutScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreenView.swift; sourceTree = "<group>"; };
 		5B4F393C265B5F3900FD3C6B /* WodTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WodTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B4F393F265B5F3900FD3C6B /* WodTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodTimeApp.swift; sourceTree = "<group>"; };
 		5B4F3941265B5F3900FD3C6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +106,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B4CE1EB2661C90A0079C7EF /* Other Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5B4CE1EC2661C9670079C7EF /* Fonts */,
+			);
+			path = "Other Assets";
+			sourceTree = "<group>";
+		};
+		5B4CE1EC2661C9670079C7EF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5B4CE1ED2661C9670079C7EF /* digital-7.ttf */,
+				5B4CE1EE2661C9670079C7EF /* impact.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		5B4F3933265B5F3900FD3C6B = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				5B5F9313265D5ADA00F2BA9D /* Extensions */,
+				5B4CE1EB2661C90A0079C7EF /* Other Assets */,
 				5B4F3971265B607A00FD3C6B /* Supporting Files */,
 				5B4F3976265B8D9300FD3C6B /* Supporting Views */,
 				5B4F393F265B5F3900FD3C6B /* WodTimeApp.swift */,
@@ -177,6 +203,7 @@
 			children = (
 				5B5F9318265DF7D400F2BA9D /* UI */,
 				5B4F3977265B8DA300FD3C6B /* Onboarding */,
+				5B4CE1F326629CC40079C7EF /* AboutScreenView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -205,6 +232,7 @@
 			children = (
 				5B5F9319265DFAA700F2BA9D /* CapsuleButton.swift */,
 				5B5F931B265E91FA00F2BA9D /* SystemImageCircleButton.swift */,
+				5B4CE1F12661CA7E0079C7EF /* WTText.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -313,7 +341,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B4F3947265B5F3A00FD3C6B /* Preview Assets.xcassets in Resources */,
+				5B4CE1EF2661C9670079C7EF /* digital-7.ttf in Resources */,
 				5B4F3944265B5F3A00FD3C6B /* Assets.xcassets in Resources */,
+				5B4CE1F02661C9670079C7EF /* impact.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +372,11 @@
 				5B5F9312265CC1A000F2BA9D /* OnboardingScreenView.swift in Sources */,
 				5B4F3949265B5F3A00FD3C6B /* Persistence.swift in Sources */,
 				5B4F397B265B8FAC00FD3C6B /* OnboardScreenView.swift in Sources */,
+				5B4CE1F426629CC40079C7EF /* AboutScreenView.swift in Sources */,
 				5B4F394C265B5F3A00FD3C6B /* WodTime.xcdatamodeld in Sources */,
 				5B5F9317265D5F7E00F2BA9D /* OnboardingContentView.swift in Sources */,
 				5B4F3942265B5F3900FD3C6B /* ContentView.swift in Sources */,
+				5B4CE1F22661CA7E0079C7EF /* WTText.swift in Sources */,
 				5B4F3970265B601300FD3C6B /* HomeView.swift in Sources */,
 				5B5F931A265DFAA700F2BA9D /* CapsuleButton.swift in Sources */,
 				5B4F3975265B60CF00FD3C6B /* AppConstants.swift in Sources */,

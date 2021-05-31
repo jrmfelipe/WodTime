@@ -14,10 +14,20 @@ struct OnboardingScreenView: View {
     @State private var currentPage = 0
     @State private var previousPage = 0
     
+    var header: String
     var title: [String]
     var detail: [String]
     var image: [String]
     var totalPages: Int
+    
+//    init(isPresented: Bool, header: String = "", title: [String], detail: [String], image:[String], totalPages: Int) {
+//        self.isPresented = isPresented
+//        self.header = header
+//        self.title = title
+//        self.detail = detail
+//        self.image = image
+//        self.totalPages = totalPages
+//    }
     
     var body: some View {
         
@@ -44,10 +54,7 @@ struct OnboardingScreenView: View {
                     HStack {
                         if (currentPage == 0) {
                             // Show only on the 1st page
-                            Text(Strings.appName)
-                                .font(.title)
-                                .fontWeight(.semibold)
-                                .kerning(1.4)
+                            WTText(header, size:26, kerning: 2.0)
                                 .transition(.slideRightToLeft)
                         } else {
                             
@@ -166,9 +173,10 @@ struct OnboardingScreenView_Previews: PreviewProvider {
     
     static var previews: some View {
         OnboardingScreenView(isPresented: $isPresented,
-                             title: ["1", "2", "3"],
-                             detail: ["Detail here .", "Detail here ..", "Detail here ..."],
+                             header: "Header",
+                             title: ["Stop watch", "Countdown Timer", "Tabata"],
+                             detail: ["Referred use: Workout for Time", "Prefered use: As Many Round/Rep as possigle (AMRAP/AMREP)", "Prefered use: High Intensity Workouts and warmup routines"],
                              image: ["timer", "clock", "clock.arrow.circlepath"],
-                             totalPages: 2)
+                             totalPages: 3)
     }
 }

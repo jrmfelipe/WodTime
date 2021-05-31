@@ -9,12 +9,32 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("This is the home screen")
+        NavigationView {
+            
+            VStack {
+                Spacer()
+                WTText("This is the home screen", kerning: 1.5)
+                Spacer()
+            }
+            .navigationTitle(Strings.appName)
+            //.background(Color.gray)
+            .toolbar {
+                NavigationLink(destination: AboutScreenView()) {
+                    Button {
+                        // TODO: show about screen here
+                    } label: {
+                        Label(Strings.about, systemImage: "info.circle")
+
+                    }
+                }
+            }
+            .accentColor(.blue)
+        }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+            HomeView()
     }
 }

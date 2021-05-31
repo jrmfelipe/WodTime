@@ -9,8 +9,10 @@ import Foundation
 
 struct Strings {
     
+    static let about = "About"
     static let appName = "WodTime"
     static let skip = "Skip"
+    static let timer = "Timer"
     
     struct Onboarding {
         struct Timer {

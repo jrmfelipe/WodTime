@@ -13,18 +13,21 @@ struct MainContentView: View {
     @State private var onboardingIsPresented = true
     
     var body: some View {
-        
         VStack {
-       
+            
             if (wasPresented || !onboardingIsPresented) {
-                
-                HomeView()
+                NavigationView {
+                    HomeView()
+                        .animation(.easeInOut(duration: 0.5))
+                        .transition(.scale)
+                }
                 
             } else {
-    
+                
                 OnboardingScreenView(isPresented: $onboardingIsPresented,
-                                     title: ["1", "2", "3"],
-                                     detail: ["Detail here .", "Detail here ..", "Detail here ..."],
+                                     header: Strings.timer,
+                                     title: ["Stop watch", "Countdown Timer", "Tabata"],
+                                     detail: ["Referred use: Workout for Time", "Prefered use: As Many Round/Rep as possigle (AMRAP/AMREP)", "Prefered use: High Intensity Workouts and warmup routines"],
                                      image: ["timer", "clock", "clock.arrow.circlepath"],
                                      totalPages: 3)
                     .onChange(of: onboardingIsPresented, perform: { newValue in
