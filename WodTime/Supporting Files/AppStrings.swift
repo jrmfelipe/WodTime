@@ -11,6 +11,7 @@ struct Strings {
     
     static let about = "About"
     static let appName = "WodTime"
+    static let back = "Back"
     static let skip = "Skip"
     static let timer = "Timer"
     
